@@ -38,7 +38,7 @@ If you want to start with the default settings:
 
 > git pull z0ne0ne/tor-docker
 
-> docker run -d --rm --name tor -p 9001:9001 -p 9030:9030 -p 9050:9050 -p 9051:9051 docker-tor
+> docker run -d --rm --name tor -p 9001:9001 -p 9030:9030 -p 9050:9050 -p 9051:9051 z0ne0ne/docker-tor
 
 ### nyx
 
@@ -59,7 +59,7 @@ nyx is a tool to monitor your tor service. Start a shell in your running contain
 
 Adapt the torrc to your needs and start the container. The local directory will be linked into the /etc/tor directory and your configuration will be enforced.
 
-> docker run -d --rm --name tor -p 9001:9001 -p 9030:9030 -p 9050:9050 -p 9051:9051 --volume ${PWD}:/etc/tor docker-tor
+> docker run -d --rm --name tor -p 9001:9001 -p 9030:9030 -p 9050:9050 -p 9051:9051 --volume ${PWD}:/etc/tor z0ne0ne/docker-tor
 
 
 ### nyx
