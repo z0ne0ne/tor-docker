@@ -2,8 +2,8 @@ FROM alpine:latest
 LABEL maintainer="z0ne0ne@protonmail.com" description="tor service with nyx in a docker container"
 
 RUN apk add --no-cache tor \
-    python \
-    python-dev \
+    python3 \
+    python3-dev \
     py-pip \
     build-base
 RUN pip install nyx    
